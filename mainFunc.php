@@ -14,6 +14,6 @@ function pregTor($content)
 {
     $preg = '/href="imc_attachad-ad.html\\?aid=(\w+)"/is';
     preg_match($preg,$content,$match);
-    return $tor='http://thz2.com/forum.php?mod=attachment&aid='.$match[1];
+    return $tor='/forum.php?mod=attachment&aid='.$match[1];
 }
 ?>
