@@ -17,4 +17,6 @@ function pregTor($content)
     preg_match($preg,$content,$match);
     return $tor='/forum.php?mod=attachment&aid='.$match[1];
 }
-?>
+function newDir($dir){
+    if (!file_exists($dir)) mkdir ($dir,0777,true);
+}
